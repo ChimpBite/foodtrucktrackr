@@ -87,9 +87,6 @@ const RegisterForm = () => {
     },
     validationSchema: validationSchema,
     onSubmit: values => {
-      console.log(values);
-      alert(JSON.stringify(values.username));
-
       if (values.accountType === 'diner') {
         axios
           .post(

@@ -66,7 +66,6 @@ const Login = () => {
     },
     validationSchema: validationSchema,
     onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
       axios
         .post('https://food-truck-trackr-api.herokuapp.com/api/auth/login', {
           username: values.username,
